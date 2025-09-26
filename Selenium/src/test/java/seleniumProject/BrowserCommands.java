@@ -11,6 +11,7 @@ public class BrowserCommands {
 		driver.get("https://selenium.qabible.in/index.php");
 		driver.manage().window().maximize();   //to maximize the window
 		//driver.manage().window().minimize(); //to minimize the window
+		
 	}
 	
 	public void browserCommands() {
@@ -20,7 +21,8 @@ public class BrowserCommands {
 		System.out.println(url);            // to print the url in Console
 		String pagesource = driver.getPageSource();// to get the page source of opened page
 		System.out.println(pagesource);    // to print the page source of opened page
-		
+		String handleid = driver.getWindowHandle(); //to get browser id of current window
+		System.out.println(handleid); //unique string value is printed which is the id of current window
 	}
 
 	public static void main(String[] args) {

@@ -22,7 +22,7 @@ public class Locators extends Base {
 		
 		WebElement element8 = driver.findElement(By.cssSelector("input#single-input-field")); //CSS Selector Combination of Tag and ID.
 		WebElement element9 = driver.findElement(By.cssSelector("input.form-control")); //Tag & Class combination. Not unique in this example. Hence do not use.
-		WebElement element10 = driver.findElement(By.cssSelector("meta[name=viewport]")); //Tag & Name combination. Unique in this example. Hence if above co
+		WebElement element10 = driver.findElement(By.cssSelector("meta[name=viewport]")); //Tag & Name combination. Unique in this example. 
 		
 		//Method by Combination of and or
 		WebElement element11 = driver.findElement(By.xpath("//button[@type='button' and @id='button-one']"));
